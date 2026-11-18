@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maulik Mukund Shah — Portfolio</title>
-  <meta name="description" content="Portfolio & full CV for Maulik Mukund Shah — Power Platform, .NET, Azure, Incident Management" />
+  <title>Maulik Mukund Shah - Portfolio</title>
+  <meta name="description" content="Portfolio & full CV for Maulik Mukund Shah - Power Platform, .NET, Azure, Incident Management" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -28,6 +28,11 @@
     .cv-frame { height: 75vh; }
     @media (min-width: 768px) { .cv-frame { height: 85vh; } }
   </style>
+  <style>
+    /* Minimal iframe sizing for timeline and original CV; existing site colors remain unchanged. */
+    #timeline iframe { display:block; }
+    @media (max-width:640px) { #timeline iframe { height:65vh; } }
+  </style>
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
   <!-- Header -->
@@ -41,6 +46,7 @@
         <a href="#awards" class="px-3 py-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Awards</a>
         <a href="#certs" class="px-3 py-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Certifications</a>
         <a href="#skills" class="px-3 py-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Skills</a>
+        <a href="#timeline" class="px-3 py-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Career Timeline</a>
         <a href="#fullcv" class="px-3 py-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Full CV</a>
         <a href="#contact" class="px-3 py-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
       </nav>
@@ -57,7 +63,7 @@
     <div class="md:col-span-7">
       <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Maulik Mukund Shah</h1>
       <p class="mt-3 text-lg opacity-90">Enterprise & Low‑Code Solutions • App Support • CI/CD • Cloud Migrations • Incident Management</p>
-      <p class="mt-5 text-base opacity-90 max-w-3xl">SPOC for mission‑critical systems with 13.7+ years across application support, development, automation, and modernization. Expert at stabilizing production, leading CTB/RTB, and delivering secure, scalable solutions.</p>
+      <p class="mt-5 text-base opacity-90 max-w-3xl">SPOC for mission‑critical systems with 14+ years across application support, development, automation, and modernization. Expert at stabilizing production, leading CTB/RTB, and delivering secure, scalable solutions.</p>
       <div class="mt-6 flex flex-wrap gap-3">
         <a href="#experience" class="px-5 py-2.5 rounded-2xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow">View Experience</a>
         <a href="#projects" class="px-5 py-2.5 rounded-2xl border border-slate-300/70 dark:border-slate-700/70">See Projects</a>
@@ -68,10 +74,11 @@
       <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 shadow-sm p-6">
         <h3 class="font-semibold text-lg">Highlights</h3>
         <ul class="mt-4 space-y-2 text-sm">
-          <li>13.7+ years across Support • Dev • Automation</li>
-          <li>CTB/RTB ownership • Tier‑3 support • Resilience</li>
-          <li>Power Platform • .NET • Azure • SQL/Oracle</li>
-          <li>Process automation & incident reduction</li>
+          <li>14+ years in enterprise software engineering, technical leadership and application support</li>
+          <li>Independent consulting engagements with Cloudious and Epsilon Technologies Group</li>
+          <li>Modernization across .NET, Power Platform, Azure, SQL Server, Oracle and Snowflake</li>
+          <li>AI-assisted code analysis, reusable AI skills and API migration support</li>
+          <li>CTB/RTB delivery, Tier-3 incident resolution, automation and production resilience</li>
         </ul>
       </div>
     </div>
@@ -81,10 +88,29 @@
   <section id="experience" class="mx-auto max-w-7xl px-4 py-10">
     <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Experience Timeline</h2>
     <div class="mt-6 space-y-6">
+      <!-- New consulting engagements: keep historical LTIMindtree role cards below unchanged. -->
+      <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 shadow-sm p-6">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="font-semibold text-lg">IT Consultant - Cloudious</h3>
+          <span class="text-xs opacity-70">May 2026 - Present</span>
+        </div>
+        <p class="mt-2 text-sm opacity-80">Independent consulting engagement</p>
+        <p class="mt-3 text-sm">Enterprise application support, API modernization, legacy code analysis, production troubleshooting and AI-assisted engineering across existing applications.</p>
+        <p class="mt-2 text-xs opacity-75">C# / .NET / Oracle / REST APIs / Apigee / GitHub / Claude AI / Microsoft Copilot / Citrix / RPA</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 shadow-sm p-6">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="font-semibold text-lg">Business / Technical Analyst - Epsilon Technologies Group</h3>
+          <span class="text-xs opacity-70">Dec 2025 - Jun 2026</span>
+        </div>
+        <p class="mt-2 text-sm opacity-80">Sole Independent Contractor (Self-Employed)</p>
+        <p class="mt-3 text-sm">RDS/EACC certification support, data reconciliation, SQL validation, migration analysis, technical documentation and UAT.</p>
+        <p class="mt-2 text-xs opacity-75">SQL Server / Snowflake / SharePoint / Power Query / OData / Python / Tableau / Power BI</p>
+      </div>
       <!-- Role 1 -->
       <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 shadow-sm p-6">
         <div class="flex items-center justify-between">
-          <h3 class="font-semibold text-lg">Specialist Software Engineer — LTIMindtree (Canada)</h3>
+          <h3 class="font-semibold text-lg">Specialist Software Engineer - LTIMindtree (Canada)</h3>
           <span class="text-xs opacity-70">2017–2025</span>
         </div>
         <ul class="mt-3 space-y-2 text-sm">
@@ -97,7 +123,7 @@
       <!-- Role 2 -->
       <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 shadow-sm p-6">
         <div class="flex items-center justify-between">
-          <h3 class="font-semibold text-lg">Sr. Software Engineer — LTIMindtree (USA & Canada)</h3>
+          <h3 class="font-semibold text-lg">Sr. Software Engineer - LTIMindtree (USA & Canada)</h3>
           <span class="text-xs opacity-70">2016–2017</span>
         </div>
         <ul class="mt-3 space-y-2 text-sm">
@@ -108,7 +134,7 @@
       <!-- Role 3 -->
       <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 shadow-sm p-6">
         <div class="flex items-center justify-between">
-          <h3 class="font-semibold text-lg">Software Engineer → Associate Software Engineer → Trainee — LTIMindtree (India)</h3>
+          <h3 class="font-semibold text-lg">Software Engineer → Associate Software Engineer → Trainee - LTIMindtree (India)</h3>
           <span class="text-xs opacity-70">2011–2016</span>
         </div>
         <ul class="mt-3 space-y-2 text-sm">
@@ -166,8 +192,8 @@
       <button id="aw-prev" class="px-3 py-2 rounded-xl border border-slate-300/70 dark:border-slate-700/70">Prev</button>
       <a id="aw-card" href="#" target="_blank" rel="noreferrer" class="flex-1">
         <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 shadow-sm p-6 text-center">
-          <div id="aw-year" class="text-sm opacity-70">—</div>
-          <div id="aw-name" class="text-xl font-semibold mt-1">—</div>
+          <div id="aw-year" class="text-sm opacity-70">-</div>
+          <div id="aw-name" class="text-xl font-semibold mt-1">-</div>
           <div class="text-xs opacity-70 mt-2">Click to view proof on LinkedIn</div>
         </div>
       </a>
@@ -216,9 +242,29 @@
     <div id="skilltags" class="flex flex-wrap gap-2 text-sm"></div>
   </section>
 
+  <!-- Career timeline (new page, does not replace the existing detailed CV) -->
+  <section id="timeline" class="mx-auto max-w-7xl px-4 py-10 scroll-mt-20">
+    <div class="flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-300">Career archive / 2011 - Present</p>
+        <h2 class="mt-2 text-2xl md:text-3xl font-bold tracking-tight">Career Timeline</h2>
+        <p class="mt-2 max-w-3xl text-sm opacity-80">A chronological view of roles, project technologies and responsibilities, including my recent consulting work and full LTIMindtree career progression.</p>
+      </div>
+      <a href="cv/Maulik-Shah-Timeline-CV-2026.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold text-sm">Open Career Timeline</a>
+    </div>
+    <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-950">
+      <iframe title="Career timeline preview" src="cv/Maulik-Shah-Timeline-CV-2026.html#career-timeline" loading="lazy" class="w-full cv-frame bg-white" style="border:0;min-height:460px"></iframe>
+    </div>
+    <div class="mt-3 flex flex-wrap gap-4 text-sm">
+      <a href="cv/Maulik-Shah-Timeline-CV-2026.html" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4">View standalone timeline</a>
+      <a href="#fullcv" class="underline underline-offset-4">Continue to original Full CV</a>
+    </div>
+  </section>
+
   <!-- Full CV -->
   <section id="fullcv" class="mx-auto max-w-7xl px-4 py-10">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight"></h2>
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Original Detailed CV</h2>
+    <p class="mt-2 text-sm opacity-80">This is the existing detailed CV, retained separately from the new career timeline.</p>
     <div class="mt-4 rounded-2xl overflow-hidden border border-slate-200/70 dark:border-slate-800/70">
       <!-- IMPORTANT: Place your files at /cv/ :
            cv/Maulik Shah-Detailed-CV.htm
@@ -411,7 +457,34 @@
 
     // Skills
     const skills = [
-      'Power Platform','Power Automate','Power Apps','Dataverse','C#','VB.NET','.NET','Azure','SQL Server','Oracle','REST APIs','Git','GitHub Actions','Blue Prism','ServiceNow','JIRA','Confluence','Power BI','DAX','PlantUML','Visio','Citrix XenApp','Salesforce Connectors'
+      'Power Platform', 'Power Apps', 'Power Automate', 'Power BI', 'Power Query',
+      'DAX', 'Dataverse', 'Dynamics 365 Sales', 'Azure', 'Azure DevOps',
+      'CI/CD', 'GitHub Actions', 'C#', 'VB.NET', '.NET',
+      '.NET Framework', 'Java', 'JavaScript', 'PHP', 'HTML',
+      'VBA', 'Word VBA', 'Excel VBA', 'Python Scripting', 'SQL',
+      'SQL Server', 'SQL Server 2000', 'SQL Server 2012', 'SQL Server 2014', 'SQL Server 2019',
+      'Oracle', 'Oracle ExaCC', 'Snowflake', 'MS Access', 'MS Access 2003',
+      'MS Access 2010', 'MS Access 2016', 'MS Excel', 'MS Word', 'Office 2016',
+      'Office 365', 'Informatica MDM', 'Informatica IDMC', 'SSIS Integration Toolkit', 'FetchXML',
+      'XRM Toolbox', 'Plugin Registration', 'Custom Connectors', 'Salesforce Connectors', 'Postman',
+      'REST APIs', 'SOAP APIs', 'WSDL', 'LDAP APIs', 'UNQORK APIs',
+      'Apigee', 'OData', 'SharePoint', 'Git', 'GitHub',
+      'Bitbucket', 'JIRA', 'Confluence', 'ServiceNow', 'ClearQuest',
+      'Visio', 'PlantUML', 'JD-GUI', 'IntelliJ Decompiler', 'Batch Scripts',
+      'PowerShell', 'Citrix XenApp', 'Citrix', 'IIS', 'Windows Server',
+      'Windows Server 2012', 'Windows Server 2019', 'Windows 7', 'Windows 10', 'Windows XP',
+      'Network Diagnostics', 'Database Connectivity', 'Blue Prism', 'RPA', 'RPA Bots',
+      'OpenText', 'Metastorm', 'Thomson Reuters Elite', 'Oracle Hyperion', 'Anaplan',
+      'Workday', 'DocuSign', 'Dotcreations', 'Claude AI', 'Microsoft Copilot',
+      'Predefined AI Skills', 'AI-Assisted Code Analysis', 'Skills-Based AI Workflows', 'Application Support', 'Legacy Application Analysis',
+      'Application Troubleshooting', 'Dependency Analysis', 'API Integration', 'API Migration Analysis', 'Cloud Migrations',
+      'SQL Migration', 'Data Reconciliation', 'SQL Validation', 'Source-to-Target Validation', 'Data Quality Analysis',
+      'Requirements Analysis', 'Business Workflow Analysis', 'UAT', 'QA/UAT', 'Unit Testing',
+      'Technical Documentation', 'Architecture Documentation', 'Reporting', 'Reporting Automation', 'Automation Troubleshooting',
+      'Incident Management', 'Incident Analysis', 'Incident Investigation', 'Issue Triage', 'Root Cause Analysis (RCA)',
+      'Tier 3 Support', 'Service Desk', 'Ticket Escalation', 'Knowledge Transfer', 'Change Requests',
+      'Release Coordination', 'Application Deployment', 'Technical Leadership', 'Team Leadership', 'SAFe Scrum',
+      'Asset Component Structure (ACS)', 'Component End Of Life (CEOL)'
     ];
     const skillTags = document.getElementById('skilltags');
     const skillQ = document.getElementById('skillq');
